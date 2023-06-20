@@ -154,7 +154,7 @@ const ConfigForm = ({
             </Label>
             <Input
               id="eyeColor"
-              value={eyeColor || fgColor}
+              value={(eyeColor || fgColor) as string}
               onChange={(e) => setForm({ ...form, eyeColor: e.target.value })}
               placeholder="color"
               type="color"

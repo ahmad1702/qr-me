@@ -18,7 +18,7 @@ const CopyButton = ({ value, className, ...props }: CopyButtonProps) => {
 
   return (
     <button
-      onClick={(e) => {
+      onClick={() => {
         if (value !== undefined) {
           navigator.clipboard.writeText(value);
         }

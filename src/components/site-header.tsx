@@ -35,9 +35,7 @@ export function SiteHeader() {
               <span className="sr-only">GitHub</span>
             </Link>
             <ThemeToggle className="hidden md:inline-flex" />
-            <MobileDropdown
-              items={{ main: siteConfig.mainNav, docs: siteConfig.sidebarNav }}
-            />
+            <MobileDropdown />
           </nav>
         </div>
       </div>
