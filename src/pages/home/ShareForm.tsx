@@ -40,7 +40,7 @@ const DownloadQRForm = ({
     <div>
       <div>Download</div>
       <Separator className="mb-3 mt-1" />
-      <div className="flex gap-2">
+      <div className="lg:flex gap-2">
         <div>
           <Label htmlFor="image-format">Image Format</Label>
           <Select
@@ -51,8 +51,8 @@ const DownloadQRForm = ({
               setImageFormat(value);
             }}
           >
-            <SelectTrigger id="image-format" className="w-[180px]">
-              <SelectValue placeholder="Select a fruit" />
+            <SelectTrigger id="image-format" className="w-full lg:w-[180px]">
+              <SelectValue placeholder="Image Format" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -64,22 +64,22 @@ const DownloadQRForm = ({
             </SelectContent>
           </Select>
         </div>
-        <div>
+        <div className="mt-2 lg:mt-0">
           <Label htmlFor="filename">Filename</Label>
           <Input
             id="filename"
             value={filename}
             onChange={(e) => setFilename(e.target.value)}
-            className="w-auto"
+            className="w-full lg:w-auto"
             placeholder="Filename"
           />
         </div>
-        <div>
-          <Label className="opacity-0 select-none pointer-events-none">
+        <div className="mt-3 lg:mt-0">
+          <Label className="hidden lg:inline opacity-0 select-none pointer-events-none">
             Download
           </Label>
           <Button
-            className="flex"
+            className="flex w-full lg:w-auto"
             onClick={downloadQR}
             disabled={filename.length === 0}
           >
