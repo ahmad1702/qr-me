@@ -38,7 +38,7 @@ export const siteConfig = {
   ],
   links: {
     linkedin: "https://www.linkedin.com/in/ahmad-sandid-485b59164/",
-    github: "https://github.com/ahmad1702",
+    github: "https://github.com/ahmad1702/qr-me",
   },
   locale: "en-US",
 };
