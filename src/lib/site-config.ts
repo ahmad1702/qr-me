@@ -25,7 +25,7 @@ export const siteConfig = {
       items: [
         {
           title: "Github",
-          href: "https://github.com/ahmad1702",
+          href: "https://github.com/ahmad1702/qr-me",
           items: [],
         },
         {
