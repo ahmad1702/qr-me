@@ -50,7 +50,12 @@ const LogoForm = ({
       <div className="space-y-4">
         <div className="w-full">
           <Label htmlFor="picture">Picture</Label>
-          <Input onChange={handleFileUpload} id="picture" type="file" />
+          <Input
+            onChange={handleFileUpload}
+            id="picture"
+            type="file"
+            accept="image/*"
+          />
         </div>
         {logoForm !== undefined && (
           <>
