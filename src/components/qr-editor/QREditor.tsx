@@ -23,7 +23,7 @@ const QREditor = ({
     <>
       <div className="flex flex-col-reverse lg:flex-row flex-1 mt-5">
         <aside className="lg:border-r-2 py-5 lg:p-5">
-          <div className="space-y-4 h-48 overflow-y-auto lg:h-auto">
+          <div className="space-y-4">
             <ConfigForm form={form} setForm={setForm} />
             <LogoForm
               form={form}
