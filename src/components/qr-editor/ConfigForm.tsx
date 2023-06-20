@@ -77,6 +77,7 @@ const ConfigForm = ({
               onChange={(e) => setForm({ ...form, bgColor: e.target.value })}
               placeholder="color"
               type="color"
+              className="bg-muted"
             />
           </div>
         </div>
@@ -93,6 +94,7 @@ const ConfigForm = ({
               onChange={(e) => setForm({ ...form, fgColor: e.target.value })}
               placeholder="color"
               type="color"
+              className="bg-muted"
             />
           </div>
         </div>
@@ -158,6 +160,7 @@ const ConfigForm = ({
               onChange={(e) => setForm({ ...form, eyeColor: e.target.value })}
               placeholder="color"
               type="color"
+              className="bg-muted"
             />
           </div>
         </div>
